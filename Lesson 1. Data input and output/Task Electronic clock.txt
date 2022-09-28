@@ -1,0 +1,7 @@
+minutes = int(input())
+StartDay = int(0)
+SumOfNumbers = (minutes + StartDay)
+hours = (SumOfNumbers // 60)
+EndHours = (hours % 24)
+EndMinutes = (SumOfNumbers % 60)
+print(EndHours, EndMinutes)

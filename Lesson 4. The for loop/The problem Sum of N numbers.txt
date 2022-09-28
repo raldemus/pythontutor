@@ -1,0 +1,8 @@
+AmountOfNumber = int(input())
+SumOfNumbers = 0
+
+for cycle in range (AmountOfNumber):
+    number = int(input())
+    SumOfNumbers += number
+    
+print(SumOfNumbers)

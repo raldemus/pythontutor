@@ -1,0 +1,5 @@
+string = input()
+
+LetterSwap = string[string.find('h') + 1:string.rfind('h')]
+
+print(string[:string.find('h') + 1] + LetterSwap.replace('h', 'H') + string[string.rfind('h'):])

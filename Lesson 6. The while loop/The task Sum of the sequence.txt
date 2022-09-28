@@ -1,0 +1,8 @@
+number = int(input())
+SumOfNumbers = 0
+
+while number != 0:
+    SumOfNumbers += number
+    number = int(input())
+    
+print(SumOfNumbers)

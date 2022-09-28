@@ -1,0 +1,6 @@
+number = int(input())
+SquaresOfNaturalNumbers = 1
+
+while SquaresOfNaturalNumbers ** 2 <= number:
+    print(SquaresOfNaturalNumbers ** 2, end = ' ')
+    SquaresOfNaturalNumbers += 1

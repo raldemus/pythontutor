@@ -1,0 +1,10 @@
+from math import sqrt
+
+FirstNumber = int(input())
+SecondNumber = int(input())
+
+FirstCathetus = FirstNumber * FirstNumber
+SecondCathetus = SecondNumber * SecondNumber
+hypotenuse = sqrt(FirstCathetus + SecondCathetus)
+
+print(hypotenuse)

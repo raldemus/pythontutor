@@ -1,0 +1,10 @@
+FirstColumn = int(input())
+FirstLine = int(input())
+SecondColumn = int(input())
+SecondLine = int(input())
+
+if FirstColumn == SecondColumn or FirstLine == SecondLine:
+    print('YES')
+    
+else:
+    print('NO')

@@ -1,0 +1,10 @@
+number = int(input())
+
+if number == 0:
+    print(0)
+else:
+    FirstPreviousNumber, SecondPreviousNumber = 0, 1
+    for cycle in range (2, number + 1):
+        FirstPreviousNumber, SecondPreviousNumber = SecondPreviousNumber, FirstPreviousNumber + SecondPreviousNumber
+        
+print(SecondPreviousNumber)

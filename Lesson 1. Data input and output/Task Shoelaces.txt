@@ -1,0 +1,11 @@
+RowSpacing = int(input())
+DistanceBetweenHoles = int(input())
+LaceEndLength = int(input())
+HolesPerLine = int(input())
+
+TotalDistanceBetweenHoles = ((HolesPerLine - 1) * DistanceBetweenHoles)
+TotalRowSpacing = (HolesPerLine * RowSpacing)
+FirstLaceLength = (TotalDistanceBetweenHoles + TotalRowSpacing + LaceEndLength)
+TotalLaceLength = (FirstLaceLength - RowSpacing + FirstLaceLength)
+
+print(TotalLaceLength)

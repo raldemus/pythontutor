@@ -1,0 +1,15 @@
+number = int(input())
+
+if number == 0:
+    print(0)
+else:
+    PreviousFibonacci, NextFibonacci = 0, 1
+    NumberFibonacci = 1
+    while NextFibonacci <= number:
+        if NextFibonacci == number:
+            print(NumberFibonacci)
+            break
+        PreviousFibonacci, NextFibonacci = NextFibonacci, PreviousFibonacci + NextFibonacci
+        NumberFibonacci += 1
+    else:
+        print(-1)

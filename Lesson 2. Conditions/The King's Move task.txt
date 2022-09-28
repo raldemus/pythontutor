@@ -1,0 +1,28 @@
+FirstColumn = int(input())
+FirstLine = int(input())
+SecondColumn = int(input())
+SecondLine = int(input())
+
+if FirstColumn < SecondColumn:
+    FirstMove = FirstColumn - SecondColumn + 1
+    
+elif FirstColumn == SecondColumn:
+    FirstMove = FirstColumn - SecondColumn
+    
+else:
+    FirstMove = FirstColumn - SecondColumn - 1
+    
+if FirstLine < SecondLine:
+    SecondMove = FirstLine - SecondLine + 1
+    
+elif FirstLine == SecondLine:
+    SecondMove = FirstLine - SecondLine
+    
+else:
+    SecondMove = FirstLine - SecondLine - 1
+    
+if FirstMove == 0 and SecondMove == 0:
+    print('YES')
+    
+else:
+    print('NO')

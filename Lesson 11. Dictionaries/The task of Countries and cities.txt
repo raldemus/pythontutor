@@ -1,0 +1,9 @@
+capitals = {}
+
+for string in range (int(input())):
+    country, *cities = input().split()
+    for city in cities:
+        capitals[city] = country
+        
+for string in range (int(input())):
+    print(capitals[input()])

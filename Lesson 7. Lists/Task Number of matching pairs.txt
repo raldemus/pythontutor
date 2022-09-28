@@ -1,0 +1,9 @@
+list = [int(number) for number in input().split()]
+Count_Pair = 0
+
+for number in range (len(list)):
+    for digit in range (number + 1, len(list)):
+        if list[number] == list[digit]:
+            Count_Pair += 1
+            
+print(Count_Pair)

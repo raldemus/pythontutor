@@ -1,0 +1,6 @@
+list = [int(element) for element in input().split()]
+
+for element in range (len(list)):
+    Count_Element = list.count(list[element])
+    if Count_Element == 1:
+        print(list[element], end = ' ')

@@ -1,0 +1,8 @@
+list = [int(number) for number in input().split()]
+Index_Of_Element = int(input())
+
+for element in range (Index_Of_Element + 1, len(list)):
+    list[element - 1] = list[element]
+
+list.pop()
+print(' '.join([str(element) for element in list]))

@@ -1,0 +1,14 @@
+from math import ceil
+
+PoleLength = int(input())
+MetersUpPerDay = int(input())
+MetersDownPerNight = int(input())
+
+if MetersUpPerDay - MetersDownPerNight == 1:
+    DaysToPole = PoleLength - MetersDownPerNight
+elif MetersUpPerDay - MetersDownPerNight > 1 and MetersDownPerNight != 0:
+    DaysToPole = ceil((PoleLength - MetersUpPerDay) / (MetersUpPerDay - MetersDownPerNight) + 1)
+else:
+    DaysToPole = ceil(PoleLength / MetersUpPerDay)
+    
+print(DaysToPole)

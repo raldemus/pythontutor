@@ -1,0 +1,14 @@
+from math import sqrt
+
+number = int(input())
+CountNumbers = 0
+ArithmeticAverage = 0
+StandartDeviation = 0
+
+while number != 0:
+    ArithmeticAverage += number
+    StandartDeviation += number ** 2
+    CountNumbers += 1
+    number = int(input())
+	
+print(sqrt((StandartDeviation - ArithmeticAverage ** 2 / CountNumbers) / (CountNumbers - 1)))

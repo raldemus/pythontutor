@@ -1,0 +1,2 @@
+list = [int(number) for number in input().split()]
+print(' '.join([str(number) for number in list[::2]]))

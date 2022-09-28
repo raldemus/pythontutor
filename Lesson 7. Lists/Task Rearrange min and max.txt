@@ -1,0 +1,12 @@
+list = [int(element) for element in input().split()]
+Min_Element, Max_Element = 0, 0
+
+for element in range (1, len(list)):
+    if list[element] < list[Min_Element]:
+        Min_Element = element
+    if list[element] > list[Max_Element]:
+        Max_Element = element
+        
+list[Min_Element], list[Max_Element] = list[Max_Element], list[Min_Element]
+
+print(' '.join([str(element) for element in list]))

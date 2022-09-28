@@ -1,0 +1,9 @@
+number = int(input())
+exponent = 1
+base = 2
+
+while base <= number:
+    exponent += 1
+    base *= 2
+
+print(exponent - 1, base // 2)

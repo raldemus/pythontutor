@@ -1,0 +1,12 @@
+number = int(input())
+
+if number > 0:
+    signx = (1)
+    
+elif number < 0:
+    signx = (-1)
+    
+else: 
+    signx = (0)
+
+print(signx)

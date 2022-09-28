@@ -1,0 +1,24 @@
+PoolLength = int(input())
+PoolWidth = int(input())
+FirstLongSide = int(input())
+FirstShortSide = int(input())
+
+if PoolLength > PoolWidth:
+    SecondShortSide = (PoolLength - FirstShortSide)
+    SecondLongSide = (PoolWidth - FirstLongSide)
+
+else:
+    SecondShortSide = (PoolWidth - FirstShortSide)
+    SecondLongSide = (PoolLength - FirstLongSide)
+
+if SecondShortSide < SecondLongSide and SecondShortSide < FirstLongSide and SecondShortSide < FirstShortSide:
+    print(SecondShortSide)
+
+elif SecondLongSide < SecondShortSide and SecondLongSide < FirstLongSide and SecondLongSide < FirstShortSide:
+    print(SecondLongSide)
+
+elif FirstLongSide < SecondShortSide and FirstLongSide < SecondLongSide and FirstLongSide < FirstShortSide:
+    print(FirstLongSide)
+
+else:
+    print(FirstShortSide)

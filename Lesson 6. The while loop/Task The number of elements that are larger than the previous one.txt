@@ -1,0 +1,11 @@
+number = int(input())
+PreviousNumber = number
+BiggerThanPrevious = 0
+
+while number != 0:
+    number = int(input())
+    if number > PreviousNumber:
+        BiggerThanPrevious += 1
+    PreviousNumber = number
+    
+print(BiggerThanPrevious)

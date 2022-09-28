@@ -1,0 +1,7 @@
+degrees = float(input())
+
+hours = int(degrees // 30)
+minutes = int(degrees % 30 * 2)
+seconds = int(degrees % 0.5 * 120)
+
+print(hours, minutes, seconds)

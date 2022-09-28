@@ -1,0 +1,11 @@
+number = int(input())
+list = [['.'] * number for string in range(number)]
+
+for string in range(number):
+    list[string][string] = '*'
+    list[number // 2][string] = '*'
+    list[string][number // 2] = '*'
+    list[string][number - string - 1] = '*'
+    
+for snowflake in list:
+    print(' '.join(snowflake))

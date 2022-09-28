@@ -1,0 +1,5 @@
+Repetition_Counter = {}
+
+for word in input().split():
+    Repetition_Counter[word] = Repetition_Counter.get(word, 0) + 1
+    print(Repetition_Counter[word] - 1, end = ' ')

@@ -1,0 +1,9 @@
+KmPerDay = int(input())
+LengthKm = int(input())
+
+if LengthKm % KmPerDay == 0:
+    DaysTillArive = LengthKm // KmPerDay
+else:
+    DaysTillArive = LengthKm // KmPerDay + 1
+    
+print(DaysTillArive)

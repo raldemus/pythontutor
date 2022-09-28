@@ -1,0 +1,8 @@
+Candidate_Votes = {}
+
+for state in range (int(input())):
+    candidate, votes = input().split()
+    Candidate_Votes[candidate] = Candidate_Votes.get(candidate, 0) + int(votes)
+    
+for candidate, votes in (Candidate_Votes.items()):
+    print(candidate, votes)

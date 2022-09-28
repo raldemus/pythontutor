@@ -1,0 +1,5 @@
+list = [int(number) for number in input().split()]
+
+for EvenNumbers in list:
+    if EvenNumbers % 2 == 0:
+        print(EvenNumbers, end = ' ')

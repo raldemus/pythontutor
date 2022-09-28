@@ -1,0 +1,12 @@
+Line_Size, Column_Size = [int(number) for number in input().split()]
+list = [[int(number) for number in input().split()] for line in range(Line_Size)]
+Maximum_Number = list[0][0]
+Max_Number_Line, Max_Number_Column = 0, 0
+
+for line in range(Line_Size):
+    for column in range(Column_Size):
+        if list[line][column] > Maximum_Number:
+            Maximum_Number = list[line][column]
+            Max_Number_Line, Max_Number_Column = line, column
+
+print(Max_Number_Line, Max_Number_Column)

@@ -1,0 +1,9 @@
+numbers = [int(number) for number in input().split()]
+duplicates = set()
+
+for number in numbers:
+    if number in duplicates:
+        print('YES')
+    else:
+        print('NO')
+        duplicates.add(number)

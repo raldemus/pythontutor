@@ -1,0 +1,11 @@
+AmountOfNumbers = int(input())
+NumberOfZeros = 0
+
+for cycle in range (1, AmountOfNumbers + 1):
+    number = int(input())
+    if number == 0:
+        NumberOfZeros += 1
+    else:
+        NumberOfZeros += 0
+        
+print(NumberOfZeros)

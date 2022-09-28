@@ -1,0 +1,5 @@
+speed = int(input())
+time = int(input())
+
+EndLabel = (speed * time % 109)
+print(EndLabel)

@@ -1,0 +1,5 @@
+number = int(input())
+array = [[abs(string - column) for column in range(number)] for string in range(number)]
+
+for Diagonals_Parallel_Main in array:
+    print(' '.join([str(string) for string in Diagonals_Parallel_Main]))

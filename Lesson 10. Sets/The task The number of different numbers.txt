@@ -1,0 +1,7 @@
+List_Numbers = set(input())
+Different_Numbers = -1
+
+for numbers in List_Numbers:
+        Different_Numbers += 1
+        
+print(Different_Numbers)

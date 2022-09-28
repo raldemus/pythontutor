@@ -1,0 +1,12 @@
+NumberOfCards = int(input())
+SumAllCards = 0
+SumRestCards = 0
+
+for FirstCycle in range (NumberOfCards + 1):
+    SumAllCards += FirstCycle
+
+for SecondCycle in range (1, NumberOfCards):
+    CardNumber = int(input())
+    SumRestCards += CardNumber
+    
+print(SumAllCards - SumRestCards)

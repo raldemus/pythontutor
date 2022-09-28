@@ -1,0 +1,13 @@
+line, column = [int(number) for number in input().split()]
+list = []
+
+for board in range(line):
+    list.append([])
+    for figures in range(column):
+        if (board + figures) % 2 == 0:
+            list[board].append('.')
+        else:
+            list[board].append('*')
+            
+for chessboard in list:
+    print(' '.join(chessboard))

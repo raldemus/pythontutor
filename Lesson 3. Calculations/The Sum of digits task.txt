@@ -1,0 +1,11 @@
+from math import floor
+
+number = int(input())
+
+FirstNumber = number / 100
+SecondNumber = floor((FirstNumber % 1) * 10)
+ThirdNumber = number % 10
+
+SumOfNumbers = floor(FirstNumber + SecondNumber + ThirdNumber)
+
+print(SumOfNumbers)

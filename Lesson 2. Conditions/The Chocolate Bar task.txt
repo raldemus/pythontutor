@@ -1,0 +1,17 @@
+LengthChocolate = int(input())
+HeightChocolate = int(input())
+NumberOfSlices = int(input())
+
+SumOfSlices = (LengthChocolate * HeightChocolate)
+
+if SumOfSlices > NumberOfSlices and NumberOfSlices % 2 == 0:
+    print('YES')
+    
+elif NumberOfSlices % LengthChocolate == 0 and NumberOfSlices // LengthChocolate < HeightChocolate:
+    print('YES')
+    
+elif NumberOfSlices % HeightChocolate == 0 and NumberOfSlices // HeightChocolate < LengthChocolate:
+    print('YES')
+    
+else:
+    print('NO')

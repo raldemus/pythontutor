@@ -1,0 +1,9 @@
+number = int(input())
+EvenItems = 0
+
+while number != 0:
+    if number % 2 == 0:
+        EvenItems += 1
+    number = int(input())
+        
+print(EvenItems)

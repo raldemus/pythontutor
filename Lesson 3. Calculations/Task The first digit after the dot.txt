@@ -1,0 +1,5 @@
+from math import floor
+number = float(input())
+NumberAfterDot = ((number % 1) * 10)
+NumberAfterDot = floor(NumberAfterDot)
+print(NumberAfterDot)

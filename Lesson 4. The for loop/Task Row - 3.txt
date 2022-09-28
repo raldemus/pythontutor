@@ -1,0 +1,5 @@
+FirstNumber = int(input())
+SecondNumber = int(input())
+
+for OddNumbers in range(FirstNumber - (FirstNumber + 1) % 2, SecondNumber - SecondNumber % 2, -2):
+    print(OddNumbers, end = ' ')

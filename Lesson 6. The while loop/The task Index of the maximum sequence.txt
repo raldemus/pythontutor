@@ -1,0 +1,13 @@
+number = int(input())
+LargestNumber = number
+LargestIndexNumber = 0
+len = 0
+
+while number != 0:
+    len += 1
+    number = int(input())
+    if number > LargestNumber:
+        LargestNumber = number
+        LargestIndexNumber = len
+
+print(LargestIndexNumber)

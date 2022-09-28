@@ -1,0 +1,46 @@
+FirstColumn = int(input())
+FirstLine = int(input())
+SecondColumn = int(input())
+SecondLine = int(input())
+
+if FirstColumn == FirstLine and SecondColumn == SecondLine:
+    print('YES')
+    
+elif FirstLine == SecondLine:
+    print('YES')
+    
+elif FirstColumn == SecondColumn:
+    print('YES')
+    
+elif FirstColumn == FirstLine and FirstColumn == SecondColumn:
+    print('NO')
+    
+elif FirstColumn == FirstLine and FirstColumn == SecondLine:
+    print('NO')
+    
+elif FirstColumn + 1 == SecondColumn and FirstColumn - 1 == SecondLine:
+    print('YES')
+    
+elif FirstColumn == SecondLine and FirstLine == SecondColumn:
+    print('YES')
+    
+elif FirstLine == FirstColumn and SecondColumn - SecondLine == FirstLine:
+    print('YES')
+    
+elif FirstLine + 1 == FirstColumn and SecondColumn - 1 == SecondLine:
+    print('YES')
+    
+elif FirstColumn + FirstLine - SecondLine == SecondColumn:
+    print('YES')
+    
+elif FirstColumn + 1 == FirstLine and SecondColumn + 1 == SecondLine:
+    print('YES')
+    
+elif FirstColumn + FirstLine == SecondColumn and FirstColumn + FirstLine < SecondLine:
+    print('NO')
+    
+elif FirstColumn + FirstLine + 1 == SecondLine:
+    print('YES')
+    
+else:
+    print('NO')

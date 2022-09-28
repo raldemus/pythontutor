@@ -1,0 +1,11 @@
+NumberOne = int(input())
+NumberTwo = int(input())
+
+if NumberOne > NumberTwo:
+    print(NumberTwo)
+    
+elif NumberOne < NumberTwo:
+    print(NumberOne)
+    
+else:
+    print(NumberOne)

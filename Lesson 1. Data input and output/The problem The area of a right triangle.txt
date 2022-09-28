@@ -1,0 +1,4 @@
+BaseOfRectangle = int(input())
+HeightOfRectangle = int(input())
+AreaOfTriangle = ((1 / 2) * BaseOfRectangle * HeightOfRectangle)
+print(AreaOfTriangle)

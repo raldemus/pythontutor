@@ -1,0 +1,12 @@
+NumberOne = int(input())
+NumberTwo = int(input())
+NumberThree = int(input())
+
+if NumberOne <= NumberTwo and NumberOne <= NumberThree:
+    print(NumberOne)
+    
+elif NumberTwo <= NumberOne and NumberTwo <= NumberThree:
+    print(NumberTwo)
+    
+else:
+    print(NumberThree)

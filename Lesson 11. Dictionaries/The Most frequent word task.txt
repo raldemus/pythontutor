@@ -1,0 +1,11 @@
+Word_Counter = {}
+
+for strings in range (int(input())):
+    string = input().split()
+    for word in string:
+        Word_Counter[word] = Word_Counter.get(word, 0) + 1
+        
+More_Common = max(Word_Counter.values())
+Lexic_Order = [word for word, number in Word_Counter.items() if number == More_Common]
+
+print(min(Lexic_Order))

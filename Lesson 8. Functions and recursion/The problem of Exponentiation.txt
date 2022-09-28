@@ -1,0 +1,7 @@
+def degrading(Positive_Number, Integral_Number):
+    if Integral_Number == 0:
+        return 1
+    else:
+        return Positive_Number * degrading(Positive_Number, Integral_Number - 1)
+        
+print(degrading(float(input()), int(input())))

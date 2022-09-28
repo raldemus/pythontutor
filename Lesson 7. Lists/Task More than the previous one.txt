@@ -1,0 +1,7 @@
+list = [int(number) for number in input().split()]
+PreviousNumber = list[0]
+
+for number in list[1::]:
+    if number > PreviousNumber:
+        print(number, end = ' ')
+    PreviousNumber = number

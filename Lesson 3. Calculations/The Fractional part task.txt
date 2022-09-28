@@ -1,0 +1,3 @@
+FractionalNumber = float(input())
+FractionSearch = round((FractionalNumber % 1), 3)
+print(FractionSearch)

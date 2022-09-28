@@ -1,0 +1,3 @@
+string = input()
+
+print(string[:string.find('h') + 1] + string[string.rfind('h') - 1:string.find('h'):-1] + string[string.rfind('h'):])

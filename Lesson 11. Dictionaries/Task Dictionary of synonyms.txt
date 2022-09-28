@@ -1,0 +1,8 @@
+Number_Pair = int(input())
+dictionary = {}
+
+for words in range (Number_Pair):
+    first, second = input().split()
+    dictionary[first], dictionary[second] = second, first
+    
+print(dictionary[input()])

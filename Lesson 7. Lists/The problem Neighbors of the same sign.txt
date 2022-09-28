@@ -1,0 +1,11 @@
+list = [int(number) for number in input().split()]
+AdjacentElement = list[0]
+
+for number in list[1::]:
+    if number >= 0 and AdjacentElement >= 0:
+        print(AdjacentElement, number)
+        break
+    elif number < 0 and AdjacentElement < 0:
+        print(AdjacentElement, number)
+        break
+    AdjacentElement = number

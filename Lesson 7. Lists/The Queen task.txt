@@ -1,0 +1,20 @@
+Number_Of_Queens = 8
+Pair_One = []
+Pair_Two = []
+
+for queens in range (8):
+    New_Pair_One, New_Pair_Two = [int(layout) for layout in input().split()]
+    Pair_One.append(New_Pair_One)
+    Pair_Two.append(New_Pair_Two)
+    
+correct = True
+
+for Punch_Each_Other in range (8):
+    for Pinch_Kick in range (Punch_Each_Other + 1, 8):
+        if Pair_One[Punch_Each_Other] == Pair_One[Pinch_Kick] or Pair_Two[Punch_Each_Other] == Pair_Two[Pinch_Kick] or abs(Pair_One[Punch_Each_Other] - Pair_One[Pinch_Kick]) == abs(Pair_Two[Punch_Each_Other] - Pair_Two[Pinch_Kick]):
+            correct = False
+            
+if correct:
+    print('NO')
+else:
+    print('YES')

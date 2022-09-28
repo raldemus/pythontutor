@@ -1,0 +1,15 @@
+NumberOne = int(input())
+NumberTwo = int(input())
+NumberThree = int(input())
+
+if NumberOne == NumberTwo == NumberThree:
+    print('3')
+    
+elif NumberOne == NumberTwo != NumberThree or NumberOne == NumberThree != NumberTwo:
+    print('2')
+    
+elif NumberTwo == NumberThree != NumberOne:
+    print('2')
+    
+else:
+    print('0')

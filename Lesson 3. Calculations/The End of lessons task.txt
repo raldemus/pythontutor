@@ -1,0 +1,14 @@
+lesson = int(input())
+
+if lesson % 2 == 0:
+    BreakTime = (lesson / 2 * 5) + (lesson / 2 * 15) - 15
+elif lesson == 1:
+    BreakTime = 0
+else:
+    BreakTime = ((lesson - 1) / 2 * 5) + ((lesson - 1) / 2 * 15)
+    
+LessonTime = (45 * lesson) + 540
+LessonHours = int((LessonTime + BreakTime) // 60 % 24)
+LessonMinutes = int((LessonTime + BreakTime) % 60)
+
+print(LessonHours, LessonMinutes)

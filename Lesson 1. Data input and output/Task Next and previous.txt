@@ -1,0 +1,8 @@
+FirstNumber = int(input())
+NextNumber = (FirstNumber + 1)
+PreviousNumber = (FirstNumber - 1)
+FirstNumber = str(FirstNumber)
+NextNumber = str(NextNumber)
+PreviousNumber = str(PreviousNumber)
+print('The next number for the number ' + FirstNumber + ' is ' + NextNumber + '.')
+print('The previous number for the number ' + FirstNumber + ' is ' + PreviousNumber + '.')

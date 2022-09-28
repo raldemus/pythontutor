@@ -1,0 +1,9 @@
+FirstDayKm = int(input())
+UnknownDayKm = int(input())
+DaysToResult = 1
+
+while FirstDayKm < UnknownDayKm:
+    FirstDayKm *= 1.1
+    DaysToResult += 1
+    
+print(DaysToResult)

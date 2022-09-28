@@ -1,0 +1,10 @@
+FirstNumber = int(input())
+SecondNumber = int(input())
+
+if FirstNumber < SecondNumber:
+    for cycle in range (FirstNumber, SecondNumber + 1):
+        print(cycle, sep='', end=' ')
+    FirstNumber += 1
+else:
+    for cycle in range (FirstNumber, SecondNumber - 1, - 1):
+        print(cycle, sep='', end=' ')

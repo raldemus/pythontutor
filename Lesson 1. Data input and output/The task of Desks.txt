@@ -1,0 +1,51 @@
+FirstClass = int(input())
+SecondClass = int(input())
+ThirdClass = int(input())
+
+FirstCabinet = ((FirstClass + 1) // 2)
+SecondCabinet = ((SecondClass + 1) // 2)
+ThirdCabinet = ((ThirdClass + 1) // 2)
+
+PartsPerStudents = (FirstCabinet + SecondCabinet + ThirdCabinet)
+
+print(PartsPerStudents)
+
+
+//
+
+
+FirstClass = int(input())
+SecondClass = int(input())
+ThirdClass = int(input())
+
+AllStudents = (FirstClass + SecondClass + ThirdClass)
+AllParts = (AllStudents // 2)
+
+RestParts = (AllStudents % AllParts)
+PartsPerStundets = (AllParts + RestParts)
+
+print(PartsPerStundets)
+
+
+// NON TERA PLUS ULTRA
+
+
+FirstClass = int(input())
+SecondClass = int(input())
+ThirdClass = int(input())
+
+FirstCabinet = (FirstClass // 2)
+SecondCabinet = (SecondClass // 2)
+ThirdCabinet = (ThirdClass // 2)
+
+AllStudents = (FirstClass + SecondClass + ThirdClass)
+AllParts = (AllStudents // 2)
+
+FirstParts = (AllParts % FirstCabinet)
+SecondParts = (AllParts % SecondCabinet)
+ThirdParts = (AllParts % ThirdCabinet)
+
+RestParts = (AllStudents % AllParts)
+PartsPerStundets = (AllParts + RestParts)
+
+print(PartsPerStundets)

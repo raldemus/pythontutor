@@ -1,0 +1,8 @@
+list = [int(number) for number in input().split()]
+CountBiggerThanAdjacent = 0
+
+for number in range (1, len(list) - 1):
+    if list[number - 1] < list[number] > list[number + 1]:
+        CountBiggerThanAdjacent += 1
+    
+print(CountBiggerThanAdjacent)

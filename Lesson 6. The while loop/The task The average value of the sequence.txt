@@ -1,0 +1,10 @@
+number = float(input())
+AmountNumbers = 0
+MiddleValue = 0
+
+while number != 0:
+    AmountNumbers += 1
+    MiddleValue += number
+    number = float(input())
+    
+print(MiddleValue / AmountNumbers)

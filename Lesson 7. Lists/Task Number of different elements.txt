@@ -1,0 +1,8 @@
+list = [int(element) for element in input().split()]
+Amount_Different_Elements = 1
+
+for element in range (1, len(list)):
+    if list[element] != list[element - 1]:
+        Amount_Different_Elements += 1
+        
+print(Amount_Different_Elements)

@@ -1,0 +1,9 @@
+Pins_In_Row, Threw_Balls = [int(numbers) for numbers in input().split()]
+Remaining_Pins = ['I'] * Pins_In_Row
+
+for Knocked_Pins in range(Threw_Balls):
+    Left_Pins, Right_Pins = [int(numbers) for numbers in input().split()]
+    for Dropouts_Pins in range(Left_Pins - 1, Right_Pins):
+        Remaining_Pins[Dropouts_Pins] = '.'
+        
+print(''.join(Remaining_Pins))

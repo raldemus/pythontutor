@@ -1,0 +1,4 @@
+NumberOne = int(input())
+NumberTwo = int(input())
+NumberThree = int(input())
+print(NumberOne + NumberTwo + NumberThree)

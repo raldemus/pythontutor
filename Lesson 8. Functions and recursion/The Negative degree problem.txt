@@ -1,0 +1,6 @@
+def Negative_Degree(Positive_Number, Integral_Number):
+    return Positive_Number ** Integral_Number
+    
+Positive_Number, Integral_Number = float(input()), int(input())
+
+print(Negative_Degree(Positive_Number, Integral_Number))

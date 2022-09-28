@@ -1,0 +1,11 @@
+list = [int(number) for number in input().split()]
+Number_k, Value_C = [int(number) for number in input().split()]
+
+list.append(0)
+
+for element in range (len(list) - 1, Number_k, -1):
+    list[element] = list[element - 1]
+
+list[Number_k] = Value_C
+
+print(' '.join([str(element) for element in list]))

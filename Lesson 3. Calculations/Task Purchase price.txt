@@ -1,0 +1,17 @@
+PieRub = int(input())
+PiePen = int(input())
+NumbersOfPies = int(input())
+
+PriceRub = (PieRub * NumbersOfPies)
+PricePen = (PiePen * NumbersOfPies)
+
+if PricePen % 100 == 0:
+    PriceRub = PriceRub + (PricePen // 100)
+    PricePen = 0
+else:
+    PriceRub = PriceRub + (PricePen // 100)
+    PricePen = (PricePen / 100) - (PricePen // 100)
+    PricePen = round(PricePen, 2)
+    PricePen = int(PricePen * 100)
+
+print(PriceRub, PricePen)

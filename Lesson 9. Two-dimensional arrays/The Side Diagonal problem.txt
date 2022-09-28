@@ -1,0 +1,14 @@
+number = int(input())
+array = [[0] * number for diagonal in range(number)]
+
+for Right_To_Left in range(number):
+    array[Right_To_Left][number - Right_To_Left - 1] = 1
+
+for Below_Diagonal in range(number):
+    for Diagonal_Numbers in range(number - Below_Diagonal, number):
+        array[Below_Diagonal][Diagonal_Numbers] = 2
+        
+for row in array:
+    for elements in row:
+        print(elements, end = ' ')
+    print()

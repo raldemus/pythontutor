@@ -1,0 +1,18 @@
+Action_Permission = {
+    'write': 'W',
+    'read': 'R',
+    'execute': 'X'
+}
+
+File_Permission = {}
+
+for File_Operation in range (int(input())):
+    file, *permission = input().split()
+    File_Permission[file] = set(permission)
+    
+for File_Request in range (int(input())):
+    action, file = input().split()
+    if Action_Permission[action] in File_Permission[file]:
+        print('OK')
+    else:
+        print('Access denied')

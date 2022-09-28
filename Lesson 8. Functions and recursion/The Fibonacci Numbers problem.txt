@@ -1,0 +1,7 @@
+def Fibonacci(number):
+    if number == 1 or number == 2:
+        return 1
+    else:
+        return Fibonacci(number - 1) + Fibonacci(number - 2)
+        
+print(Fibonacci(int(input())))

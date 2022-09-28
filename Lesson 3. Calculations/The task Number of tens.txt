@@ -1,0 +1,8 @@
+from math import floor
+
+number = int(input())
+
+NumberOfTens = number / 100
+NumberOfTens = floor((NumberOfTens % 1) * 10)
+
+print(NumberOfTens)

@@ -1,0 +1,11 @@
+number = int(input())
+FirstBigNumber, SecondBigNumber = number, 0
+
+while number != 0:
+    if number > FirstBigNumber:
+        FirstBigNumber, SecondBigNumber = number, FirstBigNumber
+    elif number < FirstBigNumber and number > SecondBigNumber:
+        SecondBigNumber = number
+    number = int(input())
+
+print(SecondBigNumber)

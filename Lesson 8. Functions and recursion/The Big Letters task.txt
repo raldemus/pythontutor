@@ -1,0 +1,6 @@
+def capitalize(words):
+    string = words.split()
+    for word in string:
+        print(chr(ord(word[0]) - 32) + word[1:], end = ' ')
+
+capitalize(input())

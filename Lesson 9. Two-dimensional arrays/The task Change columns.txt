@@ -1,0 +1,11 @@
+def swap_columns(array, Number_i, Number_j):
+    for swap_elements in range(len(array)):
+        array[swap_elements][Number_i], array[swap_elements][Number_j] = array[swap_elements][Number_j], array[swap_elements][Number_i]
+
+line, column = [int(number) for number in input().split()]
+array = [[int(elements) for elements in input().split()] for amount in range(line)]
+Number_i, Number_j = [int(number) for number in input().split()]
+
+swap_columns(array, Number_i, Number_j)
+
+print('\n'.join([' '.join([str(Number_i) for Number_i in row]) for row in array]))

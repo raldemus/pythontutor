@@ -1,0 +1,11 @@
+FirstHours = int(input())
+FirstMinutes = int(input())
+FirstSeconds = int(input())
+SecondHours = int(input())
+SecondMinutes = int(input())
+SecondSeconds = int(input())
+
+FirstTime = (3600 * FirstHours) + (60 * FirstMinutes) + FirstSeconds
+SecondTime = (3600 * SecondHours) + (60 * SecondMinutes) + SecondSeconds
+
+print(SecondTime - FirstTime)

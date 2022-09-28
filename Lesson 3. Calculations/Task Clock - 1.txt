@@ -1,0 +1,7 @@
+hours = int(input())
+minutes = int(input())
+seconds = int(input())
+
+AngleMeasure = (hours * 3600) + (minutes * 60) + seconds
+
+print(AngleMeasure / 120)

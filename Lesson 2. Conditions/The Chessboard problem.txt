@@ -1,0 +1,16 @@
+FirstColumn = int(input())
+FirstLine = int(input())
+SecondColumn = int(input())
+SecondLine = int(input())
+
+FirstCountingEven = (FirstColumn + FirstLine)
+SecondCountingEven = (SecondColumn + SecondLine)
+
+if (FirstCountingEven % 2 == 0) and (SecondCountingEven % 2 == 0):
+    print('YES')
+    
+elif (FirstCountingEven % 2 != 0) and (SecondCountingEven % 2 != 0):
+    print('YES')
+    
+else:
+    print('NO')

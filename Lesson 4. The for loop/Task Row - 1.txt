@@ -1,0 +1,6 @@
+FirstNumber = int(input())
+SecondNumber = int(input())
+
+for cycle in range (FirstNumber, SecondNumber + 1):
+    print(cycle, sep='', end=' ')
+    FirstNumber += 1

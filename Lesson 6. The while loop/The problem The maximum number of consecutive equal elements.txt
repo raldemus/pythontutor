@@ -1,0 +1,17 @@
+number = int(input())
+PreviousNumber = -1
+CurrentEqualElements = 0
+MaximumEqualElements = 0
+
+while number != 0:
+    if PreviousNumber == number:
+        CurrentEqualElements += 1
+    else:
+        PreviousNumber = number
+        MaximumEqualElements = max(MaximumEqualElements, CurrentEqualElements)
+        CurrentEqualElements = 1
+    number = int(input())
+
+MaximumEqualElements = max(MaximumEqualElements, CurrentEqualElements)
+
+print(MaximumEqualElements)

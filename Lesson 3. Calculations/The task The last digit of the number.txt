@@ -1,0 +1,3 @@
+number = int(input())
+LastNumber = (number % 10)
+print(LastNumber)
